@@ -1,5 +1,14 @@
 // pages/api/contact.js
-export default function handler(req, res) {
+export default function handler(
+  req: {
+    method: string; body: { 
+      email: any;
+      subject: any;
+      message: any; };
+  }, res: {
+    status: (arg0: number) => { (): any; new(): any;
+      json: { (arg0: { status: string; }): any; new(): any; }; end:
+      { (): any; new(): any; }; }; }): any {
   if (req.method === 'POST') {
     const { email, subject, message } = req.body;
 

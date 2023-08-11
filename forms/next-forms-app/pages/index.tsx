@@ -13,7 +13,7 @@ export default function Home() {
       message: e.currentTarget.message.value,
     };
 
-    const response = await fetch('/api/contact', {
+    const response = await fetch('http://localhost:8080/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
