@@ -23,8 +23,8 @@ func read_file() []byte {
 		log.Fatalf("failed reading data from file: %s", err)
 	}
 	return data
-
 }
+
 func main() {
 	data := read_file()
 	string_data := string(data)
