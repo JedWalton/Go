@@ -1,0 +1,19 @@
+{
+  "configurations": {
+    "Launch": {
+      "adapter": "vscode-go",
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/main.go",
+        "dlvLoadConfig": {
+          "followPointers": true,
+          "maxVariableRecurse": 1,
+          "maxStringLen": 128,
+          "maxArrayValues": 128,
+          "maxStructFields": -1
+        }
+      }
+    }
+  }
+}
+
